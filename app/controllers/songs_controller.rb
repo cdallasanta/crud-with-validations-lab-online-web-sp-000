@@ -1,1 +1,2 @@
-sdf
+class SongsController < ApplicationController
+end
