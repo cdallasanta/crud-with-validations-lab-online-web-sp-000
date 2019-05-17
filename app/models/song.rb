@@ -17,7 +17,7 @@ class Song < ApplicationRecord
     if released
       if release_year.nil?
         errors.add(:release_date, "must be provided if it is released")
-      else release_year > Time.new.year
+      elsif release_year > Time.new.year
         errors.add(:release_date, "cannot be in the future")
       end
     end
