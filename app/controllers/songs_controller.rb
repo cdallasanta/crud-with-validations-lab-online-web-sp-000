@@ -37,6 +37,6 @@ class SongsController < ApplicationController
 
   def song_params
     binding.pry
-    params.require(:songs)
+    params.require(:song)
   end
 end
